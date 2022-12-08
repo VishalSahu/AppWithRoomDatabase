@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/blue_mid"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_baseline_person_24"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginStart="10dp"
+       android:gravity="center">
+       <TextView
+           android:id="@+id/profile_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:text="@string/username"
+           android:textColor="#ffffff"
+           android:textStyle="bold" />
+
+       <TextView
+           android:id="@+id/profile_email"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/user_user_com"
+           android:layout_gravity="center_vertical"
+           android:textColor="#fff" />
+   </LinearLayout>
+
+</LinearLayout>
